@@ -5,9 +5,28 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children:[
+      {
+        path:'/dashboard',
+        component:() => import(/*webpack chunk name: dashhome */ '../components/DashHome')
+      },
+      {
+        path:'/dashmenu',
+        component:() => import(/*webpack chunk name: dashmenu*/ '../components/DashMenu'),
+        children:[
+          {
+            path:'/',
+            component:() => import(/*webpack chunk name: dashmenu*/ '../components/BreakfastMenu'),
+          }
+          
+
+        ],
+      },
+    ]
     
   },
+  
   {
     path: '/about',
     name: 'About',

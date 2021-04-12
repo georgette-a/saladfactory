@@ -1,18 +1,17 @@
 <template>
   <div>
-    <Dashboard/>
+    <Login/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
-import Dashboard from '../components/Dashboard.vue';
+import Login from '@/components/login.vue'
 
 export default {
   
   components: {
-    Dashboard
+    Login
    
   }
 }

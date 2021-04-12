@@ -50,7 +50,6 @@
     </form>
   </div>
 </div>
-Application UI
 </template>
 <script>
 export default {
