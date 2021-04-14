@@ -16,7 +16,15 @@ const routes = [
         component:() => import(/*webpack chunk name: dashmenu*/ '../components/DashMenu'),
         children:[
           {
-            path:'/',
+            path:'/dashmenu/breakfastmenu',
+            component:() => import(/*webpack chunk name: dashmenu*/ '../components/BreakfastMenu'),
+          },
+          {
+            path:'/dashmenu/saladmenu',
+            component:() => import(/*webpack chunk name: dashmenu*/ '../components/BreakfastMenu'),
+          },
+          {
+            path:'/dashmenu/dessertmenu',
             component:() => import(/*webpack chunk name: dashmenu*/ '../components/BreakfastMenu'),
           }
           

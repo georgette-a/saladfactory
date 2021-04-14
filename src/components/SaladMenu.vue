@@ -1,6 +1,6 @@
 <template>
 <div>
-   <Header meal="Breakfast"/>
+    <Header meal="Salad"/>
     <div>
     <!-- Question Listing Item Card -->
     <div class="bg-white rounded-2xl border-solid border-opacity-20 border-sf-green border-2 duration-500 px-2  py-4 my-6">
