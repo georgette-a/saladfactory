@@ -12,11 +12,12 @@
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9",
     "core-js": "^3.6.5",
-    "firebase": "^8.4.0",
+    "firebase": "^8.4.1",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vuefire": "^2.2.5",
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {

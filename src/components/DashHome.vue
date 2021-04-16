@@ -10,17 +10,17 @@
         <div class="p-8 bg-sf-light-green items-center text-center bg-opacity-10 rounded">
             <div class="text-xl font-semibold text-gray-900">Total Sales</div>
             <div class="text-sm text-gray-900 text-opacity-50 ">This week, you have made</div>
-            <div class="text-4xl font-semibold text-sf-dark-green pt-2">GHS 300</div>
+            <div class="text-4xl font-semibold text-sf-dark-green pt-2">{{weeklyrevenue}}</div>
         </div>
         <div class="p-8 bg-sf-light-green items-center text-center bg-opacity-10 rounded">
             <div class="text-xl font-semibold text-gray-900">Scheduled Deliveries</div>
             <div class="text-sm text-gray-900 text-opacity-50 ">This week you, have scheduled</div>
-            <div class="text-4xl font-semibold text-sf-dark-green pt-2">30 Deliveries</div>
+            <div class="text-4xl font-semibold text-sf-dark-green pt-2">{{deliveryCount}} Deliveries</div>
         </div>
         <div class="p-8 bg-sf-light-green items-center text-center bg-opacity-10 rounded">
             <div class="text-xl font-semibold text-gray-900">Completed Deliveries</div>
             <div class="text-sm text-gray-900 text-opacity-50 ">This week you, have completed</div>
-            <div class="text-4xl font-semibold text-sf-dark-green pt-2">10 Deliveries</div>
+            <div class="text-4xl font-semibold text-sf-dark-green pt-2">{{compdeliveries}} Deliveries</div>
         </div>
     </div>
     <div class="px-10 mx-auto pt-16">
@@ -32,6 +32,18 @@
 <script>
 import Orders from './OrderList.vue';
 export default {
+    props:{
+        weeklyrevenue: String,
+        deliveryCount: String,
+        compdeliveries: String
+
+    },
+    data () {
+            return {
+
+    }
+    },
+
     components: {
         Orders
         }

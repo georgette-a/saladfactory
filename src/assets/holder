@@ -1,0 +1,24 @@
+// db.collection("menus/saladMenu/breakfastMenu")
+        //     .get()
+        //     .then(function (querySnapshot) {
+        //         querySnapshot.forEach(function (doc) {
+        //             const content = {
+        //                 id: doc.id,
+        //                 mealname: doc.data().name,
+        //                 ingredients: toString(doc.data().content),
+        //                 price: doc.data().price,
+        //                 servings: doc.data().servingSize,
+                        
+        //             }
+                    
+        //             this.bkmenu.push(content)
+            
+        
+        //         });
+        //     })
+        //     .catch(function (error) {
+        //         console.log(error)
+        
+        //     })
+
+        // pass 12345as
