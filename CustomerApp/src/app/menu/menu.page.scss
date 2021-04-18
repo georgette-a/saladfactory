@@ -1,0 +1,58 @@
+ion-header {
+
+    
+
+    ion-toolbar, ion-item {
+      --background: #6FCF97;
+      background: #6FCF97;
+      font-size: 20px;
+      color: #000000;
+    }
+
+  
+    ion-button {
+        font-size: 22px;
+        color: #F7F7F7;
+    }
+
+    .search{
+        ion-searchbar{
+            --border-radius: 5px;
+        }
+    }
+
+    .tab-segment{
+        border-radius: 0 0 25px 25px;
+    }
+   
+  
+}
+
+ion-content{
+
+    ion-card{
+        border-radius: 10px;
+        box-shadow: 0 1px 20px 0 #e6e6e6;
+    }
+    ion-card-header{
+        ion-card-title{
+            font-size: 14px;
+            font-weight: 600;
+            color: #000000;
+        }
+    }
+
+    .price{
+        font-size: 14px;
+        font-weight: 600;
+        padding-top: 3px;
+        color: #000000;
+    }
+
+    .back-img{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+  
+}
+  

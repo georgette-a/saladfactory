@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "salad-factory-gh": {
+      "hosting": {
+        "app": [
+          "salad-factory-gh"
+        ]
+      }
+    }
+  }
+}

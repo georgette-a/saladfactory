@@ -1,0 +1,57 @@
+ion-content{
+    // --background: #FFFFFF;
+    ion-label{
+        --color: #27AE60;
+        font-size: 0.85rem;
+    }
+
+    .action-signin{
+        span{
+            color: #27AE60;
+        }
+    }
+
+    .action-start{
+        ion-button{
+            --background: #27AE60;
+        }
+    }
+
+    .top-section{
+        max-height: 320px;
+
+        border-radius: 0 0 110px 110px;
+        background: #6FCF97;
+
+        ion-button{
+            --border-radius: 15px;
+            width: 3.125rem;
+            height: 3.125rem;
+            --color: #6FCF97;
+            --background: #FFFFFF;
+        }
+
+        .back-img{
+            padding-left: 20%;
+            padding-top: 20%;
+            padding-bottom: 150px;
+            img{
+                width: 216px;
+                height: 290px;
+            }
+        }
+    }
+
+    .info-section{
+        .heading{
+            padding-top: 50px;
+            span{
+               font-weight: 600; 
+            }
+        }
+    }
+
+    
+    
+}
+

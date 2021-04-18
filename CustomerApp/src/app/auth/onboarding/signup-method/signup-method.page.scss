@@ -1,0 +1,74 @@
+ion-content{
+    // --background: #FFFFFF;
+    ion-label{
+        --color: #27AE60;
+        font-size: 0.85rem;
+    }
+
+    .action-google{
+        padding-bottom: 5px;
+        ion-button{
+            --border-color: #27AE60;
+            --color: #707070;
+        }
+    }
+
+    .action-email{
+        padding-bottom: 5px;
+        ion-button{
+            --border-color: #27AE60;
+            --color: #27AE60;
+        }
+    }
+
+    .action-signin{
+        span{
+            font-weight: 600;
+            color: #27AE60;
+        }
+    }
+
+    .action-phone{
+        ion-button{
+            --background: #27AE60;
+        }
+    }
+
+    .top-section{
+        max-height: 320px;
+
+        border-radius: 0 0 110px 110px;
+        background: #6FCF97;
+
+        ion-button{
+            --border-radius: 15px;
+            width: 3.125rem;
+            height: 3.125rem;
+            --color: #6FCF97;
+            --background: #FFFFFF;
+        }
+
+        .back-img{
+            padding-left: 20%;
+            padding-top: 40%;
+            padding-bottom: 150px;
+            img{
+                width: 216px;
+                height: 216px;
+            }
+        }
+    }
+
+    .info-section{
+        .heading{
+            padding-top: 40px;
+            span{
+               font-weight: 600; 
+            }
+        }
+    }
+
+    
+    
+}
+

@@ -1,1 +1,30 @@
 
+:host{
+    ion-tab-bar{
+        border: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        ion-icon{
+            font-size: 1.3rem;
+        }
+        ion-label{
+            font-size: 0.75rem;
+            padding-top: 3px;
+        }
+    }
+
+    ion-tab-button{
+        max-width: 76px;
+        max-height: 56px;
+    }
+
+
+    .tab-selected{
+        color: #27AE60;
+    }
+
+    .tab-hover{
+        color: #27AE60;
+    }
+}
