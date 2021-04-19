@@ -17,13 +17,19 @@
       <p class="ion-padding-horizontal">Enter your phone number with the country code in brackets.</p>
     </div>
 
+    <!-- recaptcher container -->
+    <div id="recaptcha-container" style="display: none;"></div>
+
     <div class="login-form ion-padding">
-      
 
       <div class="form-input ion-padding">
         <ion-item>
+          <ion-button slot="start" mode="ios" fill="clear" (click)="showCodes()" class="countryCodeBtn">
+            {{code}}
+            <ion-icon name="chevron-down-outline" slot="end"></ion-icon>
+          </ion-button>
           <ion-label position="stacked">Phone Number</ion-label>
-          <ion-input type="tel" clear-input="true"></ion-input>
+          <ion-input type="tel" clear-input="true" id="phoneNumber"></ion-input>
         </ion-item>
       </div>
 
@@ -31,8 +37,14 @@
     </div>
 
     <div class="action-signin ion-padding">
-      <ion-button expand="block" shape="round" class="signin-button">Next</ion-button>
+      <ion-button expand="block" shape="round" class="signin-button" (click)="sendOTP" *ngIf="!spin">Verify number</ion-button>
     </div>
+
+
+    <div class="ion-text-center" *ngIf="spin">
+      <ion-spinner color="primary"></ion-spinner>
+    </div>
+
 
   </div>
 

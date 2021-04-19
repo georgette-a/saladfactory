@@ -20,29 +20,12 @@
     <div class="verify-form ion-padding">
     
       <div class="form-input ion-padding">
-        <ion-grid class="inputs">
-          <ion-row>
-            <ion-col size="2">
-              <input type="text"  id="ip1">
-            </ion-col>
-            <ion-col size="2">
-              <input type="text"  id="ip2">
-            </ion-col>
-            <ion-col size="2">
-              <input type="text"  id="ip3">
-            </ion-col>
-            <ion-col size="2">
-              <input type="text"  id="ip4">
-            </ion-col>
-            <ion-col size="2">
-              <input type="text"  id="ip5">
-            </ion-col>
-            <ion-col size="2">
-              <input type="text"  id="ip6">
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+        <ion-item>
+          <ion-label position="stacked">6 digit OTP</ion-label>
+          <ion-input type="tel" clear-input="true" id="phoneNumber"></ion-input>
+        </ion-item>
       </div>
+
 
       <div class="action-signup ion-padding">
         <p>Don't receive a code? <span>Resend</span> </p>
@@ -52,7 +35,7 @@
     </div>
 
     <div class="action-signin ion-padding">
-      <ion-button expand="block" shape="round" class="signin-button">Next</ion-button>
+      <ion-button expand="block" shape="round" class="signin-button" (click) = "verifyOTP()">Next</ion-button>
     </div>
 
   </div>

@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'final-screen',
     loadChildren: () => import('./auth/onboarding/final-screen/final-screen.module').then( m => m.FinalScreenPageModule)
+  },
+  {
+    path: 'product',
+    loadChildren: () => import('./product/product.module').then( m => m.ProductPageModule)
   }
 ];
 @NgModule({

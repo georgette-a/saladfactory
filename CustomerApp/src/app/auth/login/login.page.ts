@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import  firebase  from 'firebase/app';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  email: string = "";
+  password: string = "";
+  constructor(public afAuth: AngularFireAuth) {}
 
   ngOnInit() {
   }
+
+  async login(){
+    const {email, password } = this;
+    try{
+      const res = await firebase.auth().signInWithEmailAndPassword(email, password);
+    }catch(err){
+      console.dir(err);
+      if(err.code === "auth/user-not-found"){
+        console.log("User not Found")
+      }
+    }
+  }
+
+
 
 
 }

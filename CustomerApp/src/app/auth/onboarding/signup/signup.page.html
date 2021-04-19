@@ -24,7 +24,7 @@
             <div class="form-input ion-padding-bottom">
               <ion-item>
                 <ion-label position="stacked">First Name</ion-label>
-                <ion-input type="text" clear-input="true" inputmode="email"></ion-input>
+                <ion-input type="text" clear-input="true" inputmode="email" [(ngModel)]="fname"></ion-input>
               </ion-item>
             </div>
           </ion-col>
@@ -32,7 +32,7 @@
             <div class="form-input ion-padding-bottom">
               <ion-item>
                 <ion-label position="stacked">Last Name</ion-label>
-                <ion-input type="text" clear-input="true" inputmode="email"></ion-input>
+                <ion-input type="text" clear-input="true" inputmode="email" [(ngModel)]="lname"></ion-input>
               </ion-item>
             </div>
           </ion-col>
@@ -42,21 +42,21 @@
       <div class="form-input ion-padding-bottom">
         <ion-item>
           <ion-label position="stacked">Email Address</ion-label>
-          <ion-input type="email" clear-input="true" inputmode="email"></ion-input>
+          <ion-input type="email" clear-input="true" inputmode="email" [(ngModel)]="email"></ion-input>
         </ion-item>
       </div>
 
       <div class="form-input ion-padding-bottom ">
         <ion-item>
           <ion-label position="stacked">Password</ion-label>
-          <ion-input type="password" clear-input="true"></ion-input>
+          <ion-input type="password" clear-input="true" [(ngModel)]="password"></ion-input>
         </ion-item>
       </div>
       
     </div>
 
     <div class="action-signin ion-padding-horizontal ion-padding-bottom">
-      <ion-button expand="block" shape="round" class="signin-button">Next</ion-button>
+      <ion-button expand="block" shape="round" class="signin-button" (click)="register()">Next</ion-button>
     </div>
 
   </div>
